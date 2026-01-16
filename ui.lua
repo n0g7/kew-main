@@ -6751,22 +6751,22 @@ function Compkiller.new(Config : Window)
 			});
 		else
 			Compkiller:_Animation(TabFrame , Style , {
-				Size = UDim2.new(0, 85,1, 0)
+				Size = UDim2.new(0, 185,1, 0)
 			});
 
 			Compkiller:_Animation(WindowLabel , Style , {
-				Position = UDim2.new(0, 60 + 25,0, 17),
-				TextTransparency = 1
+				Position = UDim2.new(0, 60,0, 17),
+				TextTransparency = 0
 			});
 
 			Compkiller:_Animation(UserText , Style , {
-				Position = UDim2.new(0, 55 + 25,0, 8),
-				TextTransparency = 1
+				Position = UDim2.new(0, 55,0, 8),
+				TextTransparency = 0.1
 			});
 
 			Compkiller:_Animation(ExpireText , Style , {
-				Position = UDim2.new(0, 55 + 25,0, 25),
-				TextTransparency = 1
+				Position = UDim2.new(0, 55,0, 25),
+				TextTransparency = 0.5
 			});
 		end;
 	end);
@@ -9873,7 +9873,7 @@ function Compkiller.new(Config : Window)
 		config = config or {};
 		config.Logo = config.Logo or Config.Logo;
 		config.Username = config.Username or LocalPlayer.DisplayName;
-		config.ExpireDate = config.ExpireDate or "DESENVOLVEDOR";
+		config.ExpireDate = config.ExpireDate or "Desenvolvedor";
 		config.WindowName = config.WindowName or Config.Name;
 		config.UserProfile = config.UserProfile or WindowArgs.Profile or string.format("rbxthumb://type=AvatarHeadShot&id=%s&w=150&h=150",tostring(LocalPlayer.UserId));
 
