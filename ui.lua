@@ -1,19 +1,4 @@
---[[
-    		Compkiller Interface
 
-    Author: 4lpaca
-    License: MIT
-    Github: https://github.com/4lpaca-pin/CompKiller
-    Original: compkiller.net
-
-        Version: 2.6
-    - Improved Performance Mode
-    	Compkiller:OptimizeMode(< boolean >)
-  	- Added Auto Color Logo
-		Compkiller:CustomIconHighlight()
---]]
-
---- Export Types ---
 
 export type cloneref = (target: Instance) -> Instance;
 
@@ -2571,7 +2556,7 @@ end;
 
 function Compkiller:PreloadIcons()
 	local RequiredAssets = {
-		"http://www.roblox.com/asset/?id=112554223509763",
+		"http://www.roblox.com/asset/?id=81431973743045",
 		"rbxassetid://4805639000",
 		"rbxassetid://6198493000",
 		"rbxassetid://10709790948",
@@ -2686,7 +2671,7 @@ function Compkiller:_AddColorPickerPanel(Button: ImageButton , Callback: (Color:
 	ColorPickBox.Position = UDim2.new(0, 7, 0, 7)
 	ColorPickBox.Size = UDim2.new(0, 145, 0, 145)
 	ColorPickBox.ZIndex = BaseZ_Index + 1
-	ColorPickBox.Image = Compkiller:CacheImage("http://www.roblox.com/asset/?id=112554223509763");
+	ColorPickBox.Image = Compkiller:CacheImage("http://www.roblox.com/asset/?id=81431973743045");
 
 	MouseMovement.Name = Compkiller:_RandomString()
 	MouseMovement.Parent = ColorPickBox
